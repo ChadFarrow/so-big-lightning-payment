@@ -74,7 +74,7 @@ body {
     overflow: hidden;
     min-height: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -310,6 +310,11 @@ body {
         margin-bottom: 8px;
     }
 
+    .step-viewport {
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
     .guide-header h1 {
         font-size: 22px;
     }
@@ -320,43 +325,69 @@ body {
 
     .step {
         flex-direction: column;
-        padding: 12px;
-        gap: 12px;
+        padding: 10px;
+        gap: 10px;
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
+    .step.active {
+        flex-direction: column;
     }
 
     .step-number {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
         align-self: flex-start;
+        flex-shrink: 0;
+    }
+
+    .step-content {
+        width: 100%;
+        flex: 1;
+        min-height: 0;
     }
 
     .step-content-wrapper {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
+        width: 100%;
     }
 
     .step-text {
-        overflow-y: auto;
+        overflow: visible;
         max-height: none;
+        width: 100%;
+        flex: 0 0 auto;
     }
 
     .step-content h2 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 
     .step-content p {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 8px;
     }
 
     .step-image {
         width: 100%;
-        max-width: 240px;
+        max-width: 220px;
         margin: 0 auto;
+        flex-shrink: 0;
+        max-height: 40vh;
+        overflow: hidden;
     }
 
     .step-image img {
         max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
     }
 
     .step-navigation {
