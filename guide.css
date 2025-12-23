@@ -1,0 +1,259 @@
+.guide-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+    z-index: 1;
+}
+
+.guide-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.back-link {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: color 0.2s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.guide-header h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.9);
+}
+
+.guide-intro {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.step {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #f7931a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.step-content p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.step-content p:last-child {
+    margin-bottom: 0;
+}
+
+.step-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.step-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.step-note {
+    background: rgba(247, 147, 26, 0.15);
+    border-left: 3px solid #f7931a;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.95) !important;
+    font-size: 15px;
+}
+
+.step-list {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.step-list li {
+    margin-bottom: 8px;
+}
+
+.step-list li:last-child {
+    margin-bottom: 0;
+}
+
+.step-list strong {
+    color: white;
+    font-weight: 600;
+}
+
+.guide-footer {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.guide-footer p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-list {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 15px auto 25px;
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.footer-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.back-to-payment {
+    display: inline-block;
+    background: #f7931a;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.back-to-payment:hover {
+    background: #e8850f;
+}
+
+@media (max-width: 768px) {
+    .guide-container {
+        padding: 15px 10px 30px;
+    }
+
+    .guide-header h1 {
+        font-size: 26px;
+    }
+
+    .guide-intro {
+        font-size: 15px;
+    }
+
+    .step {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        align-self: flex-start;
+    }
+
+    .step-content h2 {
+        font-size: 20px;
+    }
+
+    .step-content p,
+    .step-list {
+        font-size: 15px;
+    }
+
+    .step-image {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .guide-header h1 {
+        font-size: 22px;
+    }
+
+    .step {
+        padding: 15px;
+    }
+
+    .step-content h2 {
+        font-size: 18px;
+    }
+}
+

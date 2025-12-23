@@ -109,6 +109,22 @@ body {
     background: #e8850f;
 }
 
+.guide-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+    padding: 8px 0;
+}
+
+.guide-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .info-btn {
     width: 24px;
     height: 24px;
