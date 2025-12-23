@@ -10,10 +10,19 @@
     <div class="background"></div>
 
     <div class="qr-container">
+        <button id="info-btn" class="info-btn">i</button>
         <div id="qrcode"></div>
         <div class="amount">$1.25</div>
         <div class="status" id="status">Loading invoice...</div>
         <button id="refresh" class="refresh-btn">Generate New Invoice</button>
+    </div>
+
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <p>This is a demo for paying a Lightning invoice from your CashApp cash balance.</p>
+            <p>CashApp requires a $1 minimum for Lightning payments, so this invoice is set to $1.25 to ensure it works.</p>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>

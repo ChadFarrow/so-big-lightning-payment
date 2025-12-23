@@ -90,5 +90,16 @@ async function generateInvoice() {
 
 refreshBtn.addEventListener('click', generateInvoice);
 
+// Info modal
+const infoBtn = document.getElementById('info-btn');
+const modal = document.getElementById('info-modal');
+const closeBtn = document.getElementById('close-modal');
+
+infoBtn.addEventListener('click', () => modal.classList.add('active'));
+closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('active');
+});
+
 // Generate invoice on page load
 generateInvoice();
