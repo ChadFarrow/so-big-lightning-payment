@@ -328,7 +328,10 @@ body {
         padding: 10px;
         gap: 10px;
         overflow-y: auto;
+        overflow-x: visible;
         align-items: flex-start;
+        height: auto;
+        max-height: 100%;
     }
 
     .step.active {
@@ -347,12 +350,15 @@ body {
         width: 100%;
         flex: 1;
         min-height: 0;
+        overflow: visible;
     }
 
     .step-content-wrapper {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        overflow: visible;
+        flex: 1;
     }
 
     .step-text {
@@ -378,10 +384,10 @@ body {
         max-width: 220px;
         margin: 10px auto 0;
         flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        text-align: center;
         min-height: 200px;
+        position: relative;
     }
 
     .step-image img {
@@ -391,6 +397,9 @@ body {
         height: auto;
         object-fit: contain;
         display: block;
+        margin: 0 auto;
+        visibility: visible;
+        opacity: 1;
     }
 
     .step-navigation {
